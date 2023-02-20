@@ -14,24 +14,38 @@
     box-sizing: border-box;
 }
 html, body{
-    background-color: var(--VermelhoPrincipal);
+    background-color: var(--LaranjaPrincipal);
     font-family: var(--FontPrincipal);
 }
 nav{
-    background-color: transparent;
+    background-color: var(--LaranjaPrincipal);
     width: 100%;
-    height: 50px;
+    height: 100px;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
 }
-nav a{
-    color: #ffffff;
+nav .home{
     text-decoration: none;
     font-size: 1.5em;
     padding: 2.5px;
     border-radius: 10px;
-    background-color: #ffffff58;
 }
-nav a:hover{
+nav .home img{
+    height: 1.5em;
+}
+nav .LinkVendas{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: normal;
+    padding: 2.5px;
+    border-radius: 10px;
+}
+nav .LinkVendas:hover{
     color: var(--Marrom);
     background-color: #ffffff9f;
 }
@@ -43,4 +57,5 @@ main{
     background-position: center center;
     width: 100%;
     height: 50vh;
+    box-shadow: 3px 3px 30px #000000;
 }
