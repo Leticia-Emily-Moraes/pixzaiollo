@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=M+PLUS+2:100,200,300,regular,500,600,700,800,900);
+:root{
+    --VermelhoPrincipal: #db1100;
+    --LaranjaPrincipal:#ff621d;
+    --Marrom:#462a1d;
+    --VerdeClaro:#3ce057;
+    --VerdeEscuro:#23a80c;
+    --FontPrincipal:"M PLUS 2";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    background-color: var(--VermelhoPrincipal);
+    font-family: var(--FontPrincipal);
+}
+nav{
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 2.5px;
+    border-radius: 10px;
+    background-color: #ffffff58;
+}
+nav a:hover{
+    color: var(--Marrom);
+    background-color: #ffffff9f;
+}
+main{
+    background-color: var(--VermelhoPrincipal);
+    background-image: url("../img/BackPrincipal.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 50vh;
+}

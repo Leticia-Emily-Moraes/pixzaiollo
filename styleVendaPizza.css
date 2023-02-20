@@ -1,0 +1,89 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+
+}
+
+:root{
+    --main-color: #6559F0 ;
+    --text-color:  ;
+    --bg-color: ;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    color: var(--text-color);
+}
+
+
+header{
+    width: 100%;
+    background-color: var(--main-color);
+    z-index: 100;
+}
+
+.navelementos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px ;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px ;
+    font-size: 1.1rem;
+}
+
+.container{
+    max-width: 1068px;
+    width: 100%;
+    margin: auto;
+}
+
+#icon{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+a{
+    cursor: pointer;
+}
+
+section{
+    padding: 1rem 0 3rem;
+}
+
+.sectiontitle{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.shop{
+    margin-top: 2rem;
+}
+
+.divdosprodutos{
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+    grid-gap: 20px;
+}
+
+#pizza:hover{
+    padding: 10px;
+    border: 1px solid var(--main-color);
+    transition: 1s;
+}
+
