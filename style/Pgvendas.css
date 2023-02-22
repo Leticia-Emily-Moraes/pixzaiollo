@@ -49,7 +49,7 @@ header {
 }
 
 #NavPrincipal .home img{
-    height: 1.5em;
+    height: 3em;
 }
 
 .icon{
@@ -67,24 +67,44 @@ main{
 main section{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 main section #NavProdutos{
     background-color: var(--VermelhoPrincipal);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0;
     width: 100%;
+}
+main section #NavProdutos div{
+    background-color: var(--VermelhoPrincipal);
     height: 50px;
+    max-width: 600px;
+    width: 100%;
     padding: 10px;
+    margin: 30px 0px 30px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: sticky;
     top: 0;
 }
+#MenuTelaGrande{
+    display: none;
+}
+main section #NavProdutos div {
+    margin: 10px;
+}
+
 main section #NavProdutos a{
     background-color:var(--LaranjaPrincipal);
     border: 3px solid var(--VermelhoPrincipal);
@@ -114,4 +134,16 @@ main section aside img{
     width: 350px;
     border-radius: 10px;
     padding: 10px 0px;
+}
+main section aside #ContainerPreco button{
+    background-color: var(--LaranjaPrincipal);
+    padding: 3px;
+    margin: 5px;
+    border: 3px solid var(--VermelhoPrincipal);
+    display: inline-block;
+    border-radius: 5px;
+}
+main section aside #ContainerPreco button:hover{
+    background-color: var(--VermelhoPrincipal);
+    border: 3px solid var(--LaranjaPrincipal);
 }

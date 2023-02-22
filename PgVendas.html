@@ -9,68 +9,50 @@
     <link rel="stylesheet" href="style/Pgvendas.css">
 </head>
 
-<body>
+<body onresize="TelaGrande()">
     <header>
         <nav id="NavPrincipal">
             <a href="index.html" class="home"><img src="img/pixzaiollo copiar.png" alt=""></a>
-            <a href="" class="linktext" >Sobre nós<img src="/img/icon_nav/users.png" alt="" class="icon"></a>
-            <a href="" class="linktext">Fale conosco<img src="img/icon_nav/phone.png" alt="" class="icon"></a>
-            <a href="" class="icon"></a>
+            <div id="MenuHabmurguer"><img src="img/icon_nav/menu.png" alt=""></div>
+            <div id="MenuTelaGrande">
+                <a href="" class="linktext" >Sobre nós<img src="/img/icon_nav/users.png" alt="" class="icon"></a>
+                <a href="" class="linktext">Fale conosco<img src="img/icon_nav/phone.png" alt="" class="icon"></a>
+                <a href="" class="icon"></a>
+            </div>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>O que deseja?</h2>
             <nav id="NavProdutos">
-                <a href="#PizzasSalgadas">Pizzas Salgadas</a>
-                <a href="#PizzasDoces">Pizzas Doces</a>
-                <a href="#Bebidas">Bebidas</a>
+                <h2>O que deseja?</h2>
+                <div>
+                    <a href="#PizzasSalgadas">Pizzas Salgadas</a>
+                    <a href="#PizzasDoces">Pizzas Doces</a>
+                    <a href="#Bebidas">Bebidas</a>
+                </div>
             </nav>
             <aside>
-                <h2 class="tituloProduto" id="PizzasSalgadas">Pizza de pepperoni</h2>
-                <img src="/img/pepperonniv2.jpg" alt="" class="ImgVenda">
-                <span class="preco">R$25,00</span>
+                <h2 class="tituloProduto">Pizza de pepperoni</h2>
+                <img src="img/testepizza.jpg" alt="" class="ImgVenda">
+                <div id="ContainerPreco">
+                    <span class="preco">R$25,00</span>
+                    <button>Adicionar ao Carrinho</button>
+                    <button>Comprar Agora</button>
+                </div>
             </aside>
             <aside>
                 <h2 class="tituloProduto">Pizza de pepperoni</h2>
                 <img src="img/testepizza.jpg" alt="" class="ImgVenda">
-                <span class="preco">R$25,00</span>
-                <button>Adicionar ao Carrinho</button>
-                <button>Comprar Agora</button>
-            </aside>
-            <aside>
-                <h2 class="tituloProduto">Pizza de pepperoni</h2>
-                <img src="img/testepizza.jpg" alt="" class="ImgVenda">
-                <span class="preco">R$25,00</span>
-            </aside>
-            <aside>
-                <h2 class="tituloProduto">Pizza de pepperoni</h2>
-                <img src="img/testepizza.jpg" alt="" class="ImgVenda">
-                <span class="preco">R$25,00</span>
-            </aside>
-            <aside>
-                <h2 class="tituloProduto" id="PizzasDoces">Pizza de pepperoni</h2>
-                <img src="img/testepizza.jpg" alt="" class="ImgVenda">
-                <span class="preco">R$25,00</span>
-            </aside>
-            <aside>
-                <h2 class="tituloProduto">Pizza de pepperoni</h2>
-                <img src="img/testepizza.jpg" alt="" class="ImgVenda">
-                <span class="preco">R$25,00</span>
-            </aside>
-            <aside>
-                <h2 class="tituloProduto" id="Bebidas">Pizza de pepperoni</h2>
-                <img src="img/testepizza.jpg" alt="" class="ImgVenda">
-                <span class="preco">R$25,00</span>
-            </aside>
-            <aside>
-                <h2 class="tituloProduto">Pizza de pepperoni</h2>
-                <img src="img/testepizza.jpg" alt="" class="ImgVenda">
-                <span class="preco">R$25,00</span>
+                <div id="ContainerPreco">
+                    <span class="preco">R$25,00</span>
+                    <button>Adicionar ao Carrinho</button>
+                    <button>Comprar Agora</button>
+                </div>
             </aside>
         </section>
     </main>
+    <script src="script/script.js"></script>
 </body>
 
 
