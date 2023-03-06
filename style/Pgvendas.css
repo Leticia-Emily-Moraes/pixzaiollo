@@ -1,10 +1,6 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=M+PLUS+2:100,200,300,regular,500,600,700,800,900);
 
-/*body{
-    overflow-x: hidden;
-}*/
-
 :root {
     --VermelhoPrincipal: #db1100;
     --LaranjaPrincipal: #ff621d;
@@ -13,33 +9,19 @@
     --VerdeEscuro: #23a80c;
     --FontPrincipal: "M PLUS 2";
 }
-* {
-    font-family:var(--FontPrincipal) ;
+*{
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
-    
     box-sizing: border-box;
-    color: #000000;
 }
-html, body {
-    list-style: none;
-    text-decoration: none;
-    scroll-padding-top: 2rem;
-    scroll-behavior: smooth;
-}
-header {
-    width: 100%;
+html, body{
     background-color: var(--LaranjaPrincipal);
+    font-family: var(--FontPrincipal);
 }
-
-
-#NavPrincipal{
+nav{
     background-color: var(--LaranjaPrincipal);
-    color: #000000;
     width: 100%;
-    height: 75px;
+    height: 100px;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -47,16 +29,27 @@ header {
     flex-wrap: nowrap;
     align-items: center;
 }
-
-#NavPrincipal .home img{
-    height: 3em;
+nav .home{
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 2.5px;
+    border-radius: 10px;
 }
-
-.icon{
-    height: 1em;
-    cursor: pointer;
+nav .home img{
+    height: 1.5em;
 }
-
+nav .LinkVendas{
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 2px solid var(--LaranjaPrincipal);
+    font-size: 1.5em;
+    font-weight: normal;
+    padding: 2.5px;
+}
+nav .LinkVendas:hover{
+    border-bottom: 2px solid #000000;
+    transition: 1s;
+}
 main{
     width: 100%;
     display: flex;
@@ -66,6 +59,7 @@ main{
 }
 main section{
     width: 100%;
+    max-width: 880px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -97,9 +91,6 @@ main section #NavProdutos div{
     flex-wrap: nowrap;
     position: sticky;
     top: 0;
-}
-#MenuTelaGrande{
-    display: none;
 }
 main section #NavProdutos div {
     margin: 10px;

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=M+PLUS+2:100,200,300,regular,500,600,700,800,900);
+
 :root{
     --VermelhoPrincipal: #db1100;
     --LaranjaPrincipal:#ff621d;
@@ -8,6 +9,7 @@
     --VerdeEscuro:#23a80c;
     --FontPrincipal:"M PLUS 2";
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -40,16 +42,16 @@ nav .home img{
 nav .LinkVendas{
     color: #000000;
     text-decoration: none;
+    border-bottom: 2px solid var(--LaranjaPrincipal);
     font-size: 1.5em;
     font-weight: normal;
     padding: 2.5px;
-    border-radius: 10px;
 }
 nav .LinkVendas:hover{
-    color: var(--Marrom);
-    background-color: #ffffff9f;
+    border-bottom: 2px solid #000000;
+    transition: 1s;
 }
-main{
+main section#ImgPizza{
     background-color: var(--VermelhoPrincipal);
     background-image: url("../img/BackPrincipal.jpg");
     background-size: cover;
@@ -58,4 +60,24 @@ main{
     width: 100%;
     height: 50vh;
     box-shadow: 3px 3px 30px #000000;
+}
+main section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+main section aside{
+    width: 400px;
+    border: 2.5px solid var(--LaranjaPrincipal);
+    display: flex;
+    margin: 15px;
+    padding: 5px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
