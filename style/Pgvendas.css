@@ -100,7 +100,9 @@ main section #NavProdutos a{
     background-color:var(--LaranjaPrincipal);
     border: 3px solid var(--VermelhoPrincipal);
     padding: 5px;
-    width: 140px;
+    width: 150px;
+    color: #000000;
+    text-decoration: none;
     border-radius: 10px;
     font-weight: bold;
     text-align: center;
@@ -123,6 +125,7 @@ main section aside{
 }
 main section aside img{
     width: 350px;
+    height: 250px;
     border-radius: 10px;
     padding: 10px 0px;
 }
@@ -137,4 +140,16 @@ main section aside #ContainerPreco button{
 main section aside #ContainerPreco button:hover{
     background-color: var(--VermelhoPrincipal);
     border: 3px solid var(--LaranjaPrincipal);
+}
+footer{
+    text-align: center;
+    padding: 4px;
+}
+footer a{
+    color: var(--VermelhoPrincipal);
+    text-decoration: none;
+}
+footer a:hover{
+    color: var(--Marrom);
+    text-decoration: underline;
 }

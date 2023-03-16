@@ -64,7 +64,7 @@ main section#ImgPizza{
 main section{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -80,4 +80,36 @@ main section aside{
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+}
+main section#CallActionCardapio a#botaoCardapio{
+    background-color:var(--VermelhoPrincipal);
+    border: 3px solid var(--LaranjaPrincipal);
+    padding: 5px;
+    width: 150px;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+main section#CallActionCardapio a#botaoCardapio:hover{
+    border: 3px solid var(--VermelhoPrincipal);
+    background-color: var(--LaranjaPrincipal);
+}
+footer{
+    bottom: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid var(--VermelhoPrincipal);
+}
+footer a{
+    color: var(--VermelhoPrincipal);
+    text-decoration: none;
+}
+footer a:hover{
+    color: var(--Marrom);
+    text-decoration: underline;
 }
